@@ -226,6 +226,9 @@ export default function App() {
     }
     w.document.write(html);
     w.document.close();
+
+    w.onload = () => {
+      w.focus();
     w.print();
   };
 
